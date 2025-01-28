@@ -1,10 +1,12 @@
 from rest_framework import serializers
 from apps.main.models import Settings, Main, About, Contact, Form
 
+
 class SettingsSerializer(serializers.ModelSerializer):
     class Meta:
         model = Settings
         fields = "__all__"
+
 
 class MainSerializer(serializers.ModelSerializer):
     class Meta:
